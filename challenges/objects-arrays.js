@@ -78,24 +78,38 @@ Once you have the new array created, log the result. */
 function universities(graduates){
   const universities = [];
   for(let i = 0; i < graduates.length; i++){
-    const graduates = graduates[i];
-    universities.push(graduates.university);
+    const graduate = graduates[i];
+    universities.push(graduate.university);
   }
   return universities
 }
-console.log(universities);
+console.log(universities(graduates));
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
 The resulting contact information strings should have a space between the first name and the email, like this: 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
-console.log(contactInfo.push(graduates.first_name, graduates.email));
+function contactInfo(graduates){
+  const contactInfo = [];
+  for(let i = 0; i < graduates.length; i++){
+    const graduate = graduates[i];
+    contactInfo.push(graduate.first_name);
+    contactInfo.push(graduate.email);
+  }
+  return contactInfo
+}
+
+console.log(contactInfo(graduates))
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
-unisWithUni.push()
+function unisWithUni(graduates){
+  const unisWithUni = [];
+  for(let i = 0; i < graduates.length; i++)
+    const 
+}
+
+
 console.log(unisWithUni);
 
 
